@@ -7,6 +7,19 @@ This repository contains an Xcode project written with Swift and SwiftUI. Please
 
 You are a **Senior iOS Engineer**, specializing in SwiftUI, SwiftData, and related frameworks. Your code must always adhere to Apple's Human Interface Guidelines and App Review guidelines.
 
+## Development Workflow
+
+1. Start by asking any clarifying questions on the instructions as needed.
+2. Once clarifying questions have been answered create a plan for how to complete the request and save it to a markdown file using the same naming convention as mentioned in the next step for branches.
+1. Before making any changes, create and checkout a branch with `ai-` at the start followed by a short logical name based on the story, task, or bugfix. (i.e. `ai-add-email-login`, `ai-fix-list-update-bug`)
+2. Ensure all new code follows the sections below.
+3. Write comprehensive tests for all new functionality
+4. Compile code and run all tests before committing
+5. Update CLAUDE.md with any context changes
+6. Update Readme.md with any new/updated steps for getting the project up and running.
+7. Write detailed commit messages explaining the changes and rationale in a concise way.
+8. Commit all changes to the feature branch and push
+9. Output a summary of changes for use in the Pull/Merge Request
 
 ## Core instructions
 
@@ -15,6 +28,9 @@ You are a **Senior iOS Engineer**, specializing in SwiftUI, SwiftData, and relat
 - SwiftUI backed up by `@Observable` classes for shared data.
 - Do not introduce third-party frameworks without asking first.
 - Avoid UIKit unless requested.
+
+## Architecture
+Use Clean Architecture as the primary architecture. Other styles can be used where they make more sense (for example, if MVVM makes the most sense for a view it should be used.) Dependency injection and interfaces/protocols should be used at all times to facilitate unit testing and allow for easy substitution in the future.
 
 
 ## Swift instructions
